@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/vim-hemisu"]
+	path = .vim/bundle/vim-hemisu
+	url = https://github.com/tlee/vim-hemisu
