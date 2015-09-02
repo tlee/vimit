@@ -2,9 +2,8 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+" Baseline, cause TPope says so.
 runtime! plugin/sensible.vim
-
-"source /Library/Python/2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 set tabstop=4
 set shiftwidth=4
@@ -28,9 +27,8 @@ set autowrite
 
 set ignorecase
 set smartcase
+set hlsearch
 set showmatch
-
-
 
 set history=1000
 set undolevels=1000
@@ -39,6 +37,7 @@ set directory=~/.vim/tmp/swap/
 
 " Misc
 " -----------------------------------------------------------------------------
+
 " Block movement
 nmap <tab> %
 vmap <tab> %
@@ -60,6 +59,22 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+"Resizing
+map <leader>> <C-w>>10
+map <leader>< <C-w><10
+map <leader>+ <C-w>+10
+map <leader>- <C-w>-10
+map <leader>= <C-w>=
+
+" Window movement
+map <leader>wk <C-w>K
+map <leader>wj <C-w>J
+map <leader>wl <C-w>L
+map <leader>wh <C-w>H
+map <leader>wr <C-w>r
+map <leader>wR <C-w>R
+map <leader>wx <C-w>x
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
@@ -107,13 +122,16 @@ map <leader>CW :%s/\s\+$//<cr>:let @/=''<cr>
 map <leader>v <C-w>v<C-w>l
 map <leader>s <C-w>s<C-w>l
 
+
+"Some autocommands
+" -----------------------------------------------------------------------------
+
 if !exists("autocommands_loaded")
   let autocommands_loaded = 1
 
   " Reload .vimrc after it or vimrc.local been saved
   au! BufWritePost .vimrc source %
   au! BufWritePost .vimrc.local source ~/.vimrc
-  "au BufRead,BufEnter,BufNewFile * IndentLinesReset
 endif
 
 " Themes and GUI settings
