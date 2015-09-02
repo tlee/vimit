@@ -4,7 +4,7 @@ call pathogen#helptags()
 
 runtime! plugin/sensible.vim
 
-"source /Library/Python/2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim 
+"source /Library/Python/2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 set tabstop=4
 set shiftwidth=4
@@ -29,6 +29,8 @@ set autowrite
 set ignorecase
 set smartcase
 set showmatch
+
+
 
 set history=1000
 set undolevels=1000
@@ -68,7 +70,25 @@ nmap <C-Down> ]e
 
 " Plugin configuration
 " -----------------------------------------------------------------------------
+"
+" Airline
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" IndentLine
 let g:indentLine_char = '┊'
 
 " Leader mapping
