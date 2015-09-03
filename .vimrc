@@ -106,6 +106,12 @@ let g:airline_symbols.whitespace = 'Ξ'
 " IndentLine
 let g:indentLine_char = '┊'
 
+" Yankring
+let g:yankring_history_dir='~/.vim/tmp/yankring/'
+
+" JSHint
+let jshint2_save = 1
+
 " Leader mapping
 " -----------------------------------------------------------------------------
 
