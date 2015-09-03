@@ -88,7 +88,9 @@ nmap <C-Down> ]e
 
 " Plugin configuration
 " -----------------------------------------------------------------------------
-"
+" vim-json
+let g:vim_json_syntax_conceal = 0
+
 " Airline
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -148,4 +150,4 @@ endif
 set term=xterm-256color
 syntax on
 colorscheme hemisu
-set background=light
+set background=dark
