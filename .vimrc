@@ -51,6 +51,9 @@ nmap ,, i_<esc>r
 " Leader
 let mapleader = ','
 
+" Quoteplus - system clipboard copy
+map <leader>1 "+y
+
 " Clear the search highlight
 map <silent> \ :silent nohlsearch<cr>
 
