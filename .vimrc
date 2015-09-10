@@ -71,13 +71,13 @@ map <leader>- <C-w>-10
 map <leader>= <C-w>=
 
 " Window movement
-map <leader>wk <C-w>K
-map <leader>wj <C-w>J
-map <leader>wl <C-w>L
-map <leader>wh <C-w>H
-map <leader>wr <C-w>r
-map <leader>wR <C-w>R
-map <leader>wx <C-w>x
+map <leader>wk <C-w>K<C-w>=
+map <leader>wj <C-w>J<C-w>=
+map <leader>wl <C-w>L<C-w>=
+map <leader>wh <C-w>H<C-w>=
+map <leader>wr <C-w>r<C-w>=
+map <leader>wR <C-w>R<C-w>=
+map <leader>wx <C-w>x<C-w>=
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
@@ -130,8 +130,8 @@ map <leader>CN :%s/^\n\+/\r//<cr>:let @/=''<cr>
 map <leader>CW :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Open current buffer in a new split
-map <leader>v <C-w>v<C-w>l
-map <leader>s <C-w>s<C-w>l
+map <leader>v <C-w>v<C-w>l<C-w>=
+map <leader>s <C-w>s<C-w>l<C-w>=
 
 
 "Some autocommands
