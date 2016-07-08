@@ -11,7 +11,7 @@ set softtabstop=4
 set smarttab
 set expandtab
 
-set colorcolumn=120
+set colorcolumn=100
 set cursorline
 
 set nu
@@ -55,7 +55,7 @@ let mapleader = ','
 map <leader>1 "+y
 
 " Clear the search highlight
-map <silent> \ :silent nohlsearch<cr>
+map <silent> \ :nohlsearch<cr>
 
 " Split movement
 map <C-h> <C-w>h
